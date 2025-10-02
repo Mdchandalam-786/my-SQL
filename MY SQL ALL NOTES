@@ -1,0 +1,135 @@
+my sql
+select query
+
+SELECT * FROM table_name;
+
+SELECT * FROM Customers;
+
+SELECT CustomerName, City, Country FROM Customers;
+
+where select:-
+
+COMPERISION OPERATOR
+
+SELECT * FROM Customers
+WHERE Country = 'Mexico';
+
+SELECT * FROM Customers
+WHERE CustomerID = 1;
+
+SELECT * FROM Customers
+WHERE CustomerID > 1;
+
+SELECT * FROM Customers
+WHERE CustomerID >= 1;
+
+SELECT * FROM Customers
+WHERE CustomerID < 1;
+
+SELECT * FROM Customers
+WHERE CustomerID <= 1;
+
+SELECT * FROM Customers
+WHERE CustomerID <> 1;
+
+between
+
+SELECT * FROM Products
+WHERE Price BETWEEN 50 AND 60;
+
+IN
+
+SELECT * FROM Customers
+WHERE City IN ('Paris','London');
+
+ARTHMETIC OPERATORS
+
+SELECT 30 + 20;
+SELECT 30 - 20;
+SELECT 30 / 20;
+SELECT 30 * 20;
+SELECT 30 % 20;
+
+LOGICAL OPERATOR
+
+SELECT * FROM Customers
+WHERE City = "delhi" AND Country = "UK";
+
+SELECT * FROM Customers
+WHERE City = "delhi" OR Country = "UK";
+
+SELECT * FROM Customers
+WHERE NOT Country = 'Germany';
+
+ORDER BY
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+SELECT * FROM Customers
+ORDER BY Country ASC;
+
+NOT NULL
+
+SELECT CustomerName, ContactName, Address
+FROM Customers
+WHERE Address IS NULL;
+
+        UPDATE DATA
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'
+WHERE CustomerID = 1;
+ 
+drop table empdata;
+
+drop database emp;
+
+DELETE FROM EMP  WHERE condition;
+
+LIMIT
+
+SELECT * FROM Customers
+LIMIT 3;
+
+SELECT * FROM Customers LIMIT 3 OFFSET 3;
+
+SELECT * FROM Customers
+WHERE Country='Germany'
+LIMIT 3;
+
+MAX
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+MIN
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+AS
+SELECT MIN(Price) AS SmallestPrice
+FROM Products; 
+
+SUM COUNT AVERAGE FUNCTION
+
+AVERAGE
+
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+SUM
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+COUNT
+
+SELECT COUNT(ProductID)
+FROM Products;
+
+
+        
